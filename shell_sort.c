@@ -31,10 +31,10 @@ void shell_sort(int array[], int n) {
   }
 }
 
-  void print_array_elements(int a[], int n) {
+void print_array_elements(int a[], int n) {
 
-  	for(int i = 0; i < n; i++) {
-  		printf("%d ", a[i]);
-  	}
-  	printf("\n");
-  }
+	for(int i = 0; i < n; i++) {
+		printf("%d ", a[i]);
+	}
+	printf("\n");
+}
