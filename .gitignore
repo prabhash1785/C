@@ -31,3 +31,12 @@
 # Debug files
 *.dSYM/
 *.su
+
+# Xcode IDE files
+project.pbxproj
+UserInterfaceState.xcuserstate
+xcschememanagement.plist
+cplayground.xcscheme
+Breakpoints_v2.xcbkptlist
+cplayground.xccheckout
+contents.xcworkspacedata
