@@ -20,13 +20,13 @@ void print_tree_inorder(struct node *);
 
 int main(int argc, char **argv) {
     struct node *root = addNode(NULL, 10);
-    root = addNode(root, 12);
-    root = addNode(root, 100);
-    root = addNode(root, 8);
-    root = addNode(root, 6);
-    root = addNode(root, 17);
-    root = addNode(root, 5);
-    root = addNode(root, 11);
+    addNode(root, 12);
+    addNode(root, 100);
+    addNode(root, 8);
+    addNode(root, 6);
+    addNode(root, 17);
+    addNode(root, 5);
+    addNode(root, 11);
     
     printf("Inorder traversal of tree:\n");
     print_tree_inorder(root);
@@ -35,7 +35,7 @@ int main(int argc, char **argv) {
 
 struct node *addNode(struct node *root, int data) {
     if(root == NULL) {
-        struct node *temp = malloc(sizeof(struct node));
+        struct node *temp = malloc(sizeof(struct node)); // allocate space to prevent Bus 10 Error
         temp->data = data;
         return temp;
     }
